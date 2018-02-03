@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:transitionGroup="true"
+    android:background="@drawable/bg2">
+
+    <ImageButton
+        android:id="@+id/button_enablebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/button_scanbt"
+        android:onClick="on"
+        android:src="@drawable/bbluetooth"
+        android:background="@null"
+        android:layout_centerVertical="true"/>
+
+    <ImageButton
+        android:id="@+id/button_disablebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/button_scanbt"
+        android:background="@null"
+        android:onClick="off"
+        android:src="@drawable/rbluetooth"
+        android:layout_centerVertical="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/listView"
+        android:layout_below="@id/button_scanbt">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button_support"
+        android:onClick="userSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User support"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/button_scanbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="deviceList"
+        android:text="@string/scanbt"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

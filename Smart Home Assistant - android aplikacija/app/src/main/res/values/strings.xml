@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Smart Home Assistant</string>
+    <string name="scanbt">List devices</string>
+</resources>
